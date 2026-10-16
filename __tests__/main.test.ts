@@ -14,14 +14,14 @@ const {run} = require('../src/main');
 describe('mkdir action', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    core.getInput.mockReturnValue('LOCK33');
+    core.getInput.mockReturnValue('33iD');
   });
 
   it('creates the requested directory', async () => {
     await run();
 
     expect(core.getInput).toHaveBeenCalledWith('directory', {required: true});
-    expect(io.mkdirP).toHaveBeenCalledWith('LOCK33');
+    expect(io.mkdirP).toHaveBeenCalledWith('33iD');
     expect(core.setFailed).not.toHaveBeenCalled();
   });
 

@@ -1,10 +1,10 @@
 # mkdir
 
 GitHub Action that creates the directory specified by the `directory` input.
-The default directory is `LOCK33`.
+The default directory is `33iD`.
 
 ```yaml
 - uses: 33Crypto/mkdir@v1
   with:
-    directory: LOCK33
+    directory: 33iD
 ```
