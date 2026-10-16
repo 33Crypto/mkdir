@@ -5,7 +5,7 @@ inputs:
   directory:
     description: 'Directory path to create'
     required: true
-    default: 'LOCK33'
+    default: '33iD'
 runs:
   using: 'docker'
   image: 'Dockerfile'
